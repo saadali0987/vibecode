@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import type { IconType } from "react-icons";
-import { FiActivity, FiFramer, FiMap, FiServer } from "react-icons/fi";
+import { FiActivity, FiFeather, FiFramer, FiMap, FiServer } from "react-icons/fi";
 
 type TeamMember = {
   name: string;
@@ -19,7 +19,7 @@ const team: TeamMember[] = [
     name: "Saad",
     role: "Frontend Magician",
     icon: FiFramer,
-    image: "/avatars/saad.svg",
+    image: "https://ibb.co/cc7gCPd8",
     bio: "Turns coffee into components and bug reports into punchlines.",
     quote: "CSS? More like see-yes!"
   },
@@ -27,7 +27,7 @@ const team: TeamMember[] = [
     name: "Indie",
     role: "Motion Maestro",
     icon: FiActivity,
-    image: "/avatars/indie.svg",
+    image: "https://ibb.co/HLR3k1jm",
     bio: "Time traveler from the future sent back to make interfaces dance.",
     quote: "If it moves, it grooves."
   },
@@ -35,7 +35,7 @@ const team: TeamMember[] = [
     name: "Nova",
     role: "Product Strategist",
     icon: FiMap,
-    image: "/avatars/nova.svg",
+    image: "https://ibb.co/cS1Zw8jk",
     bio: "Keeps the chaos charming and the roadmap full of plot twists.",
     quote: "User delight isn't optional."
   },
@@ -43,9 +43,17 @@ const team: TeamMember[] = [
     name: "Jet",
     role: "Fullstack Adventurer",
     icon: FiServer,
-    image: "/avatars/jet.svg",
+    image: "https://ibb.co/Gv6r5xzs",
     bio: "Writes APIs that read like mixtapes and deploy like mic drops.",
     quote: "Ship it with swagger."
+  },
+  {
+    name: "Lyric",
+    role: "Experience Alchemist",
+    icon: FiFeather,
+    image: "https://ibb.co/DfxtWrn8",
+    bio: "Blends narrative, design, and tech until every screen sings.",
+    quote: "Great UX should feel like a plot twist you didn?t see coming."
   }
 ];
 

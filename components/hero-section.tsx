@@ -135,7 +135,7 @@ export function HeroSection() {
               </span>
               <span className="flex items-center gap-2">
                 <FiPenTool aria-hidden />
-                Next.js ? Tailwind ? Motion
+                Next.js | Tailwind | Motion
               </span>
               <span className="flex items-center gap-2">
                 <FiMapPin aria-hidden />
