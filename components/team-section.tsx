@@ -9,6 +9,7 @@ type TeamMember = {
   name: string;
   role: string;
   icon: IconType;
+  image: string;
   bio: string;
   quote: string;
 };
@@ -18,6 +19,7 @@ const team: TeamMember[] = [
     name: "Saad",
     role: "Frontend Magician",
     icon: FiFramer,
+    image: "/avatars/saad.svg",
     bio: "Turns coffee into components and bug reports into punchlines.",
     quote: "CSS? More like see-yes!"
   },
@@ -25,6 +27,7 @@ const team: TeamMember[] = [
     name: "Indie",
     role: "Motion Maestro",
     icon: FiActivity,
+    image: "/avatars/indie.svg",
     bio: "Time traveler from the future sent back to make interfaces dance.",
     quote: "If it moves, it grooves."
   },
@@ -32,6 +35,7 @@ const team: TeamMember[] = [
     name: "Nova",
     role: "Product Strategist",
     icon: FiMap,
+    image: "/avatars/nova.svg",
     bio: "Keeps the chaos charming and the roadmap full of plot twists.",
     quote: "User delight isn't optional."
   },
@@ -39,6 +43,7 @@ const team: TeamMember[] = [
     name: "Jet",
     role: "Fullstack Adventurer",
     icon: FiServer,
+    image: "/avatars/jet.svg",
     bio: "Writes APIs that read like mixtapes and deploy like mic drops.",
     quote: "Ship it with swagger."
   }
@@ -79,7 +84,7 @@ export function TeamSection() {
               <div className="relative flex flex-col gap-5">
                 <div className="relative h-40 w-full overflow-hidden rounded-2xl">
                   <Image
-                    src="https://via.placeholder.com/400"
+                    src={member.image}
                     alt={`${member.name} portrait`}
                     fill
                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
