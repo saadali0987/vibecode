@@ -15,7 +15,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "CodeVibe Collective | We Don't Just Code ? We Vibe",
+  title: "CodeVibe Collective | We Don't Just Code - We Vibe",
   description:
     "CodeVibe Collective is the creative tech startup turning ideas into playful, polished digital experiences. Come vibe with us!"
 };

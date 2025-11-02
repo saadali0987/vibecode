@@ -2,33 +2,43 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import type { IconType } from "react-icons";
+import { FiActivity, FiFramer, FiMap, FiServer } from "react-icons/fi";
 
-const team = [
+type TeamMember = {
+  name: string;
+  role: string;
+  icon: IconType;
+  bio: string;
+  quote: string;
+};
+
+const team: TeamMember[] = [
   {
     name: "Saad",
     role: "Frontend Magician",
-    emoji: "??",
+    icon: FiFramer,
     bio: "Turns coffee into components and bug reports into punchlines.",
     quote: "CSS? More like see-yes!"
   },
   {
     name: "Indie",
     role: "Motion Maestro",
-    emoji: "??",
+    icon: FiActivity,
     bio: "Time traveler from the future sent back to make interfaces dance.",
     quote: "If it moves, it grooves."
   },
   {
     name: "Nova",
     role: "Product Strategist",
-    emoji: "??",
+    icon: FiMap,
     bio: "Keeps the chaos charming and the roadmap full of plot twists.",
     quote: "User delight isn't optional."
   },
   {
     name: "Jet",
     role: "Fullstack Adventurer",
-    emoji: "??",
+    icon: FiServer,
     bio: "Writes APIs that read like mixtapes and deploy like mic drops.",
     quote: "Ship it with swagger."
   }
@@ -80,7 +90,7 @@ export function TeamSection() {
                     animate={{ rotate: [0, 12, -10, 0] }}
                     transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
                   >
-                    {member.emoji}
+                    <member.icon aria-hidden />
                   </motion.span>
                 </div>
                 <div className="space-y-2">

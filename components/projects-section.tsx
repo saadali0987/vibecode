@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { FiExternalLink } from "react-icons/fi";
+import { FiExternalLink, FiStar } from "react-icons/fi";
 
 const projects = [
   {
@@ -89,9 +89,7 @@ export function ProjectsSection() {
                   animate={{ x: [0, 6, 0] }}
                   transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" }}
                 >
-                  <span role="img" aria-hidden>
-                    ?
-                  </span>
+                  <FiStar aria-hidden />
                   <span>Hover to feel the sparkle</span>
                 </motion.div>
               </div>

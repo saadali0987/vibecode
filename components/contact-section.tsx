@@ -3,7 +3,14 @@
 import confetti from "canvas-confetti";
 import { motion } from "framer-motion";
 import { FormEvent, useState } from "react";
-import { FiInstagram, FiMail, FiTwitter, FiGithub } from "react-icons/fi";
+import {
+  FiCheckCircle,
+  FiInstagram,
+  FiMail,
+  FiSend,
+  FiTwitter,
+  FiGithub
+} from "react-icons/fi";
 
 const socials = [
   {
@@ -172,10 +179,10 @@ export function ContactSection() {
               <motion.span
                 animate={{ rotate: submitted ? [0, 10, -10, 0] : [0, 6, 0] }}
                 transition={{ duration: 1.2, repeat: Infinity }}
-                role="img"
                 aria-hidden
+                className="text-lg"
               >
-                {submitted ? "??" : "??"}
+                {submitted ? <FiCheckCircle /> : <FiSend />}
               </motion.span>
             </motion.button>
             {submitted && (

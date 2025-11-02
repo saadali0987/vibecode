@@ -7,25 +7,25 @@ const storyBeats = [
     title: "Chapter 1: Dorm Room Dreams",
     caption: "Three students, four laptops, and a dangerously full coffee punch card.",
     punchline: "Started in a dorm room... still coding in one, just with better Wi-Fi.",
-    icon: "??"
+    icon: "\uD83C\uDFE0" // house
   },
   {
     title: "Chapter 2: Hackathon High",
     caption: "Won 'Best Use of Chaos' at a 3am hackathon. Judges still confused.",
     punchline: "Lesson learned: naps are optional, vibes aren't.",
-    icon: "??"
+    icon: "\uD83C\uDFC6" // trophy
   },
   {
     title: "Chapter 3: The Collective",
     caption: "Turned our group chat into a studio. Emojis became deliverables.",
     punchline: "We ship joy with every commit (and at least one meme).",
-    icon: "??"
+    icon: "\uD83E\uDD1D" // handshake
   },
   {
     title: "Chapter 4: Future Funk",
     caption: "Now partnering with brands that get it. We remix their ideas into experiences.",
     punchline: "Plot twist: the future called - asked us to design it.",
-    icon: "??"
+    icon: "\uD83D\uDE80" // rocket
   }
 ];
 

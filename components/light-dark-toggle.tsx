@@ -3,6 +3,7 @@
 import { useTheme } from "next-themes";
 import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useState } from "react";
+import { FiCoffee, FiSun } from "react-icons/fi";
 
 export function LightDarkToggle() {
   const { theme, setTheme, resolvedTheme } = useTheme();
@@ -38,10 +39,9 @@ export function LightDarkToggle() {
           exit={{ rotate: 20, y: -10, opacity: 0 }}
           transition={{ type: "spring", stiffness: 200, damping: 10 }}
           className="text-lg"
-          role="img"
           aria-hidden
         >
-          {isDark ? "?" : "??"}
+          {isDark ? <FiCoffee /> : <FiSun />}
         </motion.span>
       </AnimatePresence>
     </button>

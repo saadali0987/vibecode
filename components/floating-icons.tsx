@@ -3,11 +3,11 @@
 import { motion } from "framer-motion";
 
 const ICONS = [
-  { emoji: "??", top: "12%", left: "8%", delay: 0 },
-  { emoji: "??", top: "28%", left: "78%", delay: 1.2 },
-  { emoji: "??", top: "58%", left: "18%", delay: 2.4 },
-  { emoji: "??", top: "75%", left: "85%", delay: 3.2 },
-  { emoji: "??", top: "40%", left: "50%", delay: 1.9 }
+  { emoji: "\uD83D\uDCA1", top: "12%", left: "8%", delay: 0 }, // lightbulb
+  { emoji: "\uD83E\uDE84", top: "28%", left: "78%", delay: 1.2 }, // magic wand
+  { emoji: "\uD83C\uDFA7", top: "58%", left: "18%", delay: 2.4 }, // headphones
+  { emoji: "\uD83D\uDE80", top: "75%", left: "85%", delay: 3.2 }, // rocket
+  { emoji: "\uD83C\uDFA8", top: "40%", left: "50%", delay: 1.9 } // paint palette
 ];
 
 export function FloatingIcons() {

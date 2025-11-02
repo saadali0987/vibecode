@@ -2,6 +2,14 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import {
+  FiArrowDown,
+  FiCoffee,
+  FiGlobe,
+  FiMapPin,
+  FiPenTool,
+  FiZap
+} from "react-icons/fi";
 import { LightDarkToggle } from "./light-dark-toggle";
 
 const headlineVariants = {
@@ -53,7 +61,7 @@ export function HeroSection() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.6 }}
           >
-            ? We don&apos;t just code ? we vibe.
+            Spark check: we don&apos;t just code - we vibe.
           </motion.span>
           <LightDarkToggle />
         </header>
@@ -67,7 +75,7 @@ export function HeroSection() {
               variants={headlineVariants}
               custom={0}
             >
-              We&apos;re <span className="font-display">CodeVibe Collective</span> ?
+              We&apos;re <span className="font-display">CodeVibe Collective</span> -
               your friendly neighborhood code wizards.
             </motion.h1>
 
@@ -99,10 +107,9 @@ export function HeroSection() {
                   animate={{ y: [0, -6, 0] }}
                   transition={{ duration: 1.2, repeat: Infinity }}
                   className="text-lg"
-                  role="img"
                   aria-hidden
                 >
-                  ??
+                  <FiArrowDown />
                 </motion.span>
               </Link>
 
@@ -111,7 +118,7 @@ export function HeroSection() {
                 className="inline-flex items-center gap-3 rounded-full border border-slate-900/20 px-6 py-3 text-sm font-semibold text-slate-900 transition hover:border-slate-900 hover:text-slate-950 dark:border-white/20 dark:text-white/90 dark:hover:border-white dark:hover:text-white"
               >
                 See the magic
-                <span aria-hidden>?</span>
+                <FiZap aria-hidden />
               </Link>
             </motion.div>
 
@@ -123,13 +130,16 @@ export function HeroSection() {
               custom={3}
             >
               <span className="flex items-center gap-2">
-                ?? Web + Creative Tech Studio
+                <FiGlobe aria-hidden />
+                Web + Creative Tech Studio
               </span>
               <span className="flex items-center gap-2">
-                ?? Next.js ? Tailwind ? Motion
+                <FiPenTool aria-hidden />
+                Next.js ? Tailwind ? Motion
               </span>
               <span className="flex items-center gap-2">
-                ??? Remote from Everywhere
+                <FiMapPin aria-hidden />
+                Remote from Everywhere
               </span>
             </motion.div>
           </div>
@@ -153,19 +163,19 @@ export function HeroSection() {
               </div>
               <ul className="space-y-4 text-sm text-slate-700 dark:text-slate-200/90">
                 <li className="flex items-center gap-2">
-                  <span className="text-lg">?</span>
+                  <FiZap aria-hidden className="text-base" />
                   <span>
                     Realtime collaboration, minus the boring meetings.
                   </span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-lg">??</span>
+                  <FiPenTool aria-hidden className="text-base" />
                   <span>
                     Interfaces that feel like a comic strip meets a spaceship.
                   </span>
                 </li>
                 <li className="flex items-center gap-2">
-                  <span className="text-lg">?</span>
+                  <FiCoffee aria-hidden className="text-base" />
                   <span>
                     Caffeine-powered commits deployed with a grin.
                   </span>
@@ -185,7 +195,7 @@ export function HeroSection() {
                   className="text-3xl"
                   aria-hidden
                 >
-                  ??
+                  <FiArrowDown />
                 </motion.div>
               </motion.div>
             </div>
